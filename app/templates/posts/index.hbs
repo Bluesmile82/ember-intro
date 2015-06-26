@@ -1,4 +1,7 @@
 Tienes {{model.length}} posts
+{{#link-to 'posts.new' tagName='h4'}}
+  Crear un nuevo post
+{{/link-to}}
 
 <h2>Menu</h2>
 {{#each model as |post|}}

@@ -1,0 +1,24 @@
+<form>
+
+  <div>
+    <label for='post___title'>
+      Title
+    </label>
+    {{input value=model.title}}
+  </div>
+  <div>
+  <label for='post___content'>
+    Body
+  </label>
+    {{input value=model.body}}
+  </div>
+
+<button {{action 'savePost' bubbles=false}}>
+  Guardar
+</button>
+
+</form>
+
+{{x-post post=model}}
+
+{{outlet}}
