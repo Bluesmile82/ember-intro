@@ -1,4 +1,11 @@
-{{model.length}}
+Tienes {{model.length}} posts
+
+<h2>Menu</h2>
+{{#each model as |post|}}
+{{#link-to 'posts.show' post tagName='h4' classNames='post---title'}}
+  - {{post.title}}
+{{/link-to}}
+{{/each}}
 
 {{#each model as |post|}}
   {{x-post post=post}}

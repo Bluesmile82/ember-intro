@@ -1,8 +1,8 @@
-<article class='post'>
+{{#link-to 'posts.show' post tagName='h4' classNames='post---title'}}
   <h1 class='post---title'>
   {{post.title}}
   </h1>
-  <p class='post---body'>
-    {{{post.body}}}
-  </p>
-</article>
+{{/link-to}}
+<p class='post---body'>
+  {{{post.body}}}
+</p>
